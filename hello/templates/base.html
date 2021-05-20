@@ -51,16 +51,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
   </style>
-    <input type="select" multiple="oui">
-       <libellé>format de vos images</libellé>
-       <option nom="gif" valeur="oui">format GIF</option>
-       <option nom="jpg" valeur="oui">format JPG</option>
-       <option nom="bmp" valeur="oui">format BMP</option>
-       <option nom="png" valeur="oui">format PNG</option>
-       <option nom="tiff" valeur="oui">format TIFF</option>
-       <option nom="svg" valeur="oui">format SVG</option>
-       <option nom="raw" valeur="oui">format RAW</option>
-    </input>
 </head>
 <body>
   
@@ -111,6 +101,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 
 {% block content %}{% endblock %}
-  
+  <input type="select">
+   <nom>images-type</nom>
+   <libellé>support actuel de vos images</libellé>
+   <option valeur="papier">photo papier</option>
+   <option valeur="dia">diapositives</option>
+   <option valeur="numeriques">images numériques</option>
+   <p>Si vous utilisez plusieurs formats, cochez celui qui est le plus fréquent.</p>
+</input>
 </body>
 </html>
